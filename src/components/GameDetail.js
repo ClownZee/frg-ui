@@ -21,7 +21,7 @@ export default function GameDetail() {
     setLoading(true);
     setError("");
     try {
-      const { data } = await axios.get(`https://103.150.116.168:3000/download?slug=${slug}`);
+      const { data } = await axios.get(`https://uknowngames.net:1331/download?slug=${slug}`);
       setGameDetails(data);
     } catch (error) {
       setError("Failed to fetch game details. Please try again later.");
