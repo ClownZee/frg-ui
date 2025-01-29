@@ -18,7 +18,7 @@ export default function OnlineGameList() {
   const fetchGames = async () => {
     setLoading(true);
     try {
-      const { data } = await axios.get(`https://103.150.116.168:3000/onlinegame?page=${page}`);
+      const { data } = await axios.get(`https://uknowngames.net:1331/onlinegame?page=${page}`);
       setGames(data);
     } catch (error) {
       console.error("Failed to fetch online games", error);
