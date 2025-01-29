@@ -16,7 +16,7 @@ export default function GameSearch() {
     setLoading(true);
     setError(null);
     try {
-      const response = await axios.get(`https://103.150.116.168:3000/search?q=${query}`);
+      const response = await axios.get(`https://uknowngames.net:1331/search?q=${query}`);
       setGames(response.data);
     } catch (err) {
       setError("Failed to fetch search results");
